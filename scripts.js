@@ -15,6 +15,7 @@ if (navClose) {
 }
 
 const navLink = document.querySelectorAll('.nav_link');
+
 const linkAction = ()=>{
   navMenu.classList.remove('show-menu');
 }
