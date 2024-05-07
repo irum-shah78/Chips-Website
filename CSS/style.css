@@ -244,6 +244,56 @@ img {
   left: -0.75rem;
 }
 
+.favorite_container{
+  row-gap: 3rem;
+  grid-template-columns: 100%;
+  padding-bottom: 3rem;
+}
+.favorite_data{
+  position: relative;
+  text-align: center;
+}
+.favorite_cheese-1,
+.favorite_cheese-2{
+  width: 40px;
+  position: absolute;
+  opacity: .5;
+}
+.favorite_cheese-1{
+  top: 2rem;
+  right: -1rem;
+  rotate: -15deg;
+}
+.favorite_cheese-2{
+  bottom: -2rem;
+  left: -.75rem;
+  transform: scaleX(-1) rotate(45deg);
+}
+.favorite_article{
+  position: relative;
+  width: 200px;
+}
+.favorite_img{
+  width: 200px;
+}
+.favorite_leaf-1,
+.favorite_leaf-2{
+  width: 70px;
+  position: absolute;
+  filter: var(--shadow-img);
+}
+.favorite_leaf-1{
+  top: -1rem;
+  right: -.5rem;
+}
+.favorite_leaf-2{
+  bottom: -1rem;
+  left: -.5rem;
+}
+.swiper{
+  margin-inline: initial;
+  overflow: visible;
+}
 .button,
 .button_ghost{
   background-color: var(--second-color);

@@ -16,13 +16,21 @@ if (navClose) {
 
 const navLink = document.querySelectorAll('.nav_link');
 
-const linkAction = ()=>{
+const linkAction = () => {
   navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-const shadowHeader = ()=>{
+const shadowHeader = () => {
   const header = document.getElementById('header');
   this.scrollY >= 50 ? header.classList.add('shadow-header') : header.classList.remove('shadow-header');
 }
 window.addEventListener('scroll', shadowHeader);
+
+// SWIPER
+const swiperFavorite = new Swiper('.favorite_swiper', {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  centeredSlides: 'auto',
+});
