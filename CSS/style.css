@@ -260,7 +260,7 @@ img {
   opacity: .5;
 }
 .favorite_cheese-1{
-  top: 2rem;
+  top: 1rem;
   right: -1rem;
   rotate: -15deg;
 }
@@ -272,9 +272,14 @@ img {
 .favorite_article{
   position: relative;
   width: 200px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 .favorite_img{
   width: 200px;
+  scale: 0.8;
+  transition: scale .4s , filter .4s;
 }
 .favorite_leaf-1,
 .favorite_leaf-2{
