@@ -79,7 +79,7 @@ img {
 .section {
   padding-block: 5rem 1rem;
 }
-.section__title {
+.section_title {
   font: var(--font-regular) var(--h1-font-size) var(--second-font);
   text-align: center;
   margin-bottom: 1.5rem;
@@ -257,10 +257,10 @@ img {
 .favorite_cheese-2{
   width: 40px;
   position: absolute;
-  opacity: .5;
+  opacity: 0.5;
 }
 .favorite_cheese-1{
-  top: 1rem;
+  top: 2rem;
   right: -1rem;
   rotate: -15deg;
 }
@@ -269,13 +269,13 @@ img {
   left: -.75rem;
   transform: scaleX(-1) rotate(45deg);
 }
-/* .favorite_article{
+.favorite_article{
   position: relative;
   width: 200px;
 }
 .favorite_img{
   width: 200px;
-  scale: 0.8;
+  scale: .8;
   transition: scale .4s, filter .4s;
 }
 .favorite_leaf-1,
@@ -294,21 +294,71 @@ img {
   bottom: -1rem;
   left: -.5rem;
 }
+
+/* SWIPER */
 .swiper{
   margin-inline: initial;
   overflow: visible;
+  /* width: 600px;
+  height: 300px; */
 }
-:is(.swiper-slider-active, .swiper-slide-duplicate-active) 
-.favorite_img{
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorite_img{
   scale: 1;
   filter: var(--shadow-img);
 }
-:is(.swiper-slider-active, .swiper-slide-duplicate-active) 
-.favorite_leaf-1,
-:is(.swiper-slider-active, .swiper-slide-duplicate-active) 
-.favorite_leaf-2{
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorite_leaf-1,
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorite_leaf-2{
   scale: 1;
-} */
+}
+.care{
+  background-color: var(--first-color-dark);
+}
+.care_container{
+  row-gap: 3rem;
+  padding-block: 1rem 2rem;
+}
+.care_list{
+  display: grid;
+  row-gap: 1.25rem;
+}
+.care_item{
+  display: flex;
+  column-gap: .75rem;
+  align-items: center;
+}
+.care_item i{
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+.care_img{
+  width: 320px;
+  filter: var(--second-color);
+  justify-self: center;
+}
+.banner{
+  padding-top: 3rem;
+}
+.banner_container{
+  background-color:var(--second-color);
+  padding: 1rem 1.5rem;
+}
+.banner_list{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+.banner_item{
+  color: var(--second-color-dark);
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+.banner_item i{
+  font-size: 1.5rem;
+}
+.banner_item span{
+  font: var(--small-font-size) var(--second-font);
+}
 
 .button,
 .button_ghost{

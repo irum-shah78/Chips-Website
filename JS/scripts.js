@@ -28,9 +28,9 @@ const shadowHeader = () => {
 window.addEventListener('scroll', shadowHeader);
 
 // SWIPER
-const swiperFavorite = new Swiper('.favorite_swiper', {
+const swiperFavorite = new Swiper('.swiper', {
   loop: true,
   grabCursor: true,
-  slidesPerView: 3,
-  centeredSlides: 'auto',
+  slidesPerView: 'auto',
+  centeredSlides: 'auto,'
 });
