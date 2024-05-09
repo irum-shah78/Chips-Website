@@ -269,7 +269,7 @@ img {
   left: -.75rem;
   transform: scaleX(-1) rotate(45deg);
 }
-.favorite_article{
+/* .favorite_article{
   position: relative;
   width: 200px;
 }
@@ -308,8 +308,7 @@ img {
 :is(.swiper-slider-active, .swiper-slide-duplicate-active) 
 .favorite_leaf-2{
   scale: 1;
-  /* filter: var(--shadow-img); */
-}
+} */
 
 .button,
 .button_ghost{

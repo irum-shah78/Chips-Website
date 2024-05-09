@@ -31,6 +31,6 @@ window.addEventListener('scroll', shadowHeader);
 const swiperFavorite = new Swiper('.favorite_swiper', {
   loop: true,
   grabCursor: true,
-  slidesPerView: 'auto',
+  slidesPerView: 3,
   centeredSlides: 'auto',
 });
