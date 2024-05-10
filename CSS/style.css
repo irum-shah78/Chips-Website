@@ -438,6 +438,64 @@ img {
   rotate: 15deg;
 }
 
+.contact_container{
+  position: relative;
+  background-color: var(--first-color-darken);
+  padding-top: 3.5rem;
+  border-radius: 3rem;
+  box-shadow: inset var(--shadow-card);
+  overflow: hidden;
+}
+.contact_content{
+  padding-top: 1rem;
+  row-gap: 3rem;
+}
+.contact_data{
+  text-align: center;
+}
+.contact_title{
+  font: var(--font-regular) var(--h2-font-size) var(--second-font);
+  margin-bottom: .5rem;
+}
+.contact_social{
+  display: flex;
+  justify-content: center;
+  column-gap: .75rem;
+}
+.contact_social a{
+  color: var(--second-color);
+  font-size: 1.5rem;
+}
+.contact_info{
+  font-size: normal;
+}
+.contact_img{
+  width: 200px;
+  justify-self: center;
+  filter: var(--shadow-img);
+}
+.contact_shrimp,
+.contact_crab,
+.contact_meat{
+  position: absolute;
+  width: 40px;
+  opacity: .5;
+}
+.contact_shrimp{
+  top: 9rem;
+  right: 1.5rem;
+  rotate: 15deg;
+}
+.contact_crab{
+  top: 17rem;
+  left: 1rem;
+  rotate: 15deg;
+}
+.contact_meat{
+  right: 2rem;
+  bottom: 11rem;
+  rotate: -15deg;
+}
 
 .button,
 .button_ghost{
