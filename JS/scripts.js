@@ -28,12 +28,23 @@ const shadowHeader = () => {
 window.addEventListener('scroll', shadowHeader);
 
 // SWIPER
-const swiperFavorite = new Swiper('.swiper', {
+const swiperFavorite = new Swiper('.favorite_swiper', {
   loop: true,
   grabCursor: true,
   slidesPerView: 'auto',
-  centeredSlides: 'auto,'
+  centeredSlides: true,
 });
+
+const favoriteContainer = document.querySelector('.favorite_container');
+const favoriteSwiperWrapper = document.querySelector('.favorite_swiper .swiper-wrapper');
+const favoriteSwiperSlides = document.querySelectorAll('.favorite_swiper .swiper-slide');
+
+let totalSlidesWidth = 0;
+favoriteSwiperSlides.forEach(slide => {
+  totalSlidesWidth += slide.offsetWidth;
+});
+favoriteSwiperWrapper.style.width = totalSlidesWidth + 'px';
+favoriteContainer.style.overflowX = 'hidden';
 
 // SCROLL UP
 const scrollUp = () => {
