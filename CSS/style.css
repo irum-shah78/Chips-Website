@@ -315,7 +315,7 @@ img {
 }
 .care{
   background-color: var(--first-color-dark);
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 .care_container{
   row-gap: 3rem;
@@ -341,7 +341,7 @@ img {
 }
 .banner{
   padding-top: 3rem;
-  margin-left: .75rem;
+  /* margin-left: .75rem; */
 }
 .banner_container{
   background-color:var(--second-color);
@@ -367,7 +367,7 @@ img {
 .products_container{
   position: relative;
   padding-top: 4.5rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 .product_content{
   grid-template-columns: repeat(2, 1fr);
@@ -752,5 +752,161 @@ img {
   .home_images img{
     width: 95px;
   }
-  
+  .favorite_container{
+    grid-template-columns: 520px;
+    row-gap: 4rem;
+  }
+  .favorite_cheese-1,
+  .favorite_cheese-2{
+    width: 80px;
+  }
+  .favorite_cheese-1{
+    right: -18rem;
+  }
+  .favorite_cheese-2{
+    left: -18rem;
+  }
+  .favorite_swiper{
+    max-width: 1000px;
+  }
+  /* .favorite_article,
+  .favorite_img{
+    width: 320px;
+  } */
+  .favorite_leaf-1,
+  .favorite_leaf-2{
+    width: 110px;
+  }
+  .care_container{
+    grid-template-columns: 500px 410px;
+    column-gap: 6rem;
+    align-items: center;
+    padding-block: 4rem;
+  }
+  .care_img{
+    width: 550px;
+    order: -1;
+  }
+  .care_item{
+    column-gap: 1rem;
+  }
+  .care_item i{
+    font-size: 2rem;
+  }
+  .banner{
+    padding-top: 4rem;
+  }
+  .banner_list{
+    column-gap: 6.5rem;
+  }
+  .banner_item{
+    column-gap: 1rem;
+  }
+  .banner_item i{
+    font-size: 4.5rem;
+  }
+  .banner_item span{
+    font-size: var(--h1-font-size);
+  }
+  .products_container{
+    padding-top: 7.5rem;
+  }
+  .product_content{
+    grid-template-columns: repeat(3, 250px);
+    gap: 10rem 4rem;
+  }
+  .product_card{
+    padding: 11rem 2rem 2rem;
+    border-radius: 1.5rem;
+  }
+  .product_img{
+    width: 170px;
+    top: -5rem;
+  }
+  .product_subtitle{
+    font-size: var(--normal-font-size);
+  }
+  .product_price{
+    font-size: var(--h3-font-size);
+  }
+  .product_button{
+    right: 2rem;
+    bottom: 2rem;
+    padding: 6px;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+  }
+  .product_crab,
+  .product_hamburger,
+  .product_cheese{
+    width: 80px;
+  }
+  .product_crab{
+    top: 2rem;
+  }
+  .product_hamburger{
+    top: 30rem;
+    right: 3rem;
+  }
+  .product_cheese{
+    left: 4rem;
+    margin: initial;
+  }
+  .contact{
+    display: block;
+  }
+  .contact_container{
+    border-radius: 4rem;
+  }
+  .contact_content{
+    grid-template: 330px / 360px 320px;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 10rem;
+    padding-top: 2rem;
+  }
+  .contact_data{
+    text-align: initial;
+    grid-template: max-content / repeat(2, max-content);
+    gap: 3rem 2rem;
+  }
+  .contact_title{
+    margin-bottom: .75rem;
+  }
+  .contact_social{
+    justify-content: initial;
+  }
+  .contact_img{
+    width: 320px;
+    transform: translateY(-6rem);
+  }
+  .contact_shrimp,
+  .contact_crab,
+  .contact_meat{
+    width: 80px;
+  }
+  .contact_shrimp{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20rem;
+  }
+  .contact_crab{
+    top: 5rem;
+    left: 4rem;
+  }
+  .contact_meat{
+    right: initial;
+    left: 12rem;
+    bottom: -1rem;
+  }
+  .footer{
+    padding-block: 5rem 3rem;
+  }
+  .footer_container{
+    row-gap: 3rem;
+  }
+  .scrollup{
+    right: 3rem;
+  }
 }

@@ -72,3 +72,20 @@ const scrollActive = () => {
   })
 };
 window.addEventListener('scroll', scrollActive);
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 300,
+  reset: true,
+});
+
+sr.reveal(`.home_data, .favorite_container, .footer_container`);
+sr.reveal(`.home_circle, .home_img`, { delay: 600, scale: .5 });
+sr.reveal(`.home_chips-1, .home_chips-2, .home_chips-3`, { delay: 1000, interval: 100 });
+sr.reveal(`.home_leaf`, { delay: 1200 });
+sr.reveal(`.home_tomato-1, .home_tomato-2`, { delay: 1400, interval: 100 });
+sr.reveal(`.care_img, .contact_img`, { origin: 'left' });
+sr.reveal(`.care_list, .contact_data`, { origin: 'right' });
+sr.reveal(`.banner_item, .product_card`, { interval: 100 });
